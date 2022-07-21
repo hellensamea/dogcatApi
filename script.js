@@ -20,7 +20,7 @@ $(document).ready(function(){
         $.get('https://random.dog/woof.json?ref=publicapis.dev', function(dados, status){
         let mp4 = dados.url
         if (mp4.includes("mp4")){
-            $('#fatos').show().text("There's an error. Hit the button again, please.").css("background-color", "rgba(231, 50, 50, 0.774)")
+            $('#fatos').show().text("Something happened. Hit the button again, please.").css("background-color", "rgba(231, 50, 50, 0.774)")
             $('#foto').empty();
         }else{
             if (status == 'success'){
